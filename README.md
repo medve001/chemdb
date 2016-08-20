@@ -1,9 +1,14 @@
 # chemdb
 
+### To do:
+ - add code for new entries
+ - add code for getting CAS number from PubChem
+ - Number of Publications?
+ - Getting info from other databases
 
 
 
-#### Examples of Query Sintax (in SQLite Manager for FireFox):
+### Examples of Query Sintax (in SQLite Manager for FireFox):
 SELECT * FROM DB_index WHERE NAME LIKE '%trazine' OR Sample_ID LIKE 'TX2%'
 
 SELECT * FROM DB_index WHERE Sample_ID='TX001546' OR Sample_ID='TX101546' OR Sample_ID='TX201546'
