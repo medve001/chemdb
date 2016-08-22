@@ -1,7 +1,7 @@
 # Search DB (created in FireFox SQLite Manager) for chemical names and CAS by IDs 
 import csv
 import sqlite3
-conn = sqlite3.connect('DB_index6.sqlite')
+conn = sqlite3.connect('./database/DB_index6.sqlite')
 
 myTerm = input('File term (First part of the file name):\n')
 
