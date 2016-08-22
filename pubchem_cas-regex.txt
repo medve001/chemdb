@@ -1,0 +1,34 @@
+PubChem "synonym" data contains CAS numbers for many chemicals.
+Synonyms request (JSON) returns a list that may contain correct elements like "27790-74-5" or "CAS-87-66-1".
+CAS number can be extracted with regex.
+
+CAS regex:
+\d{2,7}-\d\d-\d$
+
+Example requests:
+
+compound synonyms request:
+by name: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/alachlor/synonyms/JSON
+by cid: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2078/synonyms/JSON
+(one "synonym" list)
+
+Substance synonyms request:
+https://pubchem.ncbi.nlm.nih.gov/rest/pug/substance/name/alachlor/synonyms/JSON
+(multiple "synonym" lists)
+
+
+
+Support info:
+
+PubChem PUG REST API
+https://pubchem.ncbi.nlm.nih.gov/pug_rest/PUG_REST.html
+
+Site to test regex:
+http://www.regexpal.com/
+
+Some regex syntax:
+^ matches the beginning of the string
+[^...] matches anything that isn't inside
+0-9 means any character between 0 and 9
++ matches one or more of the previous thing
+$ matches the end of the string
